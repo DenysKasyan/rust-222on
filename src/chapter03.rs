@@ -20,3 +20,14 @@ fn test2() {
     assert_eq!(x, 3);
     println!("Success!");
 }
+
+#[test]
+fn test3() {
+    let x: i32 = 10;
+    let y: i32;
+    {
+        y = 5;
+        println!("The value of x is {} and value of y is {}", x, y);
+    }
+    println!("The value of x is {} and value of y is {}", x, y);
+}
