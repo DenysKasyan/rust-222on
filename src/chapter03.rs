@@ -11,3 +11,12 @@ fn test1() {
     assert_eq!(x, 5);
     println!("Success!");
 }
+
+#[test]
+fn test2() {
+    let mut x = 1;
+    x += 2;
+
+    assert_eq!(x, 3);
+    println!("Success!");
+}
